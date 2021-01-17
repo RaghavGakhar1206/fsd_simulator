@@ -1,0 +1,10 @@
+ubscribe_depth: false
+subscribe_scan: true
+subscribe_scan_cloud: true
+subscribe_stereo: true
+frame_id: base_link
+map_frame_id: map
+# queue_size: 10
+publish_tf: true
+wait_for_transform: true
+wait_for_transform_duration: 0.1
