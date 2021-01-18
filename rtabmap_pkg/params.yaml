@@ -1,11 +1,11 @@
-subscribe_depth: false #pehele true kiya tha
+subscribe_depth: false
 subscribe_rgbd: true
-subscribe_scan: false  #pehele true tha
+subscribe_scan: false
 subscribe_scan_cloud: true
 subscribe_stereo: false
 frame_id: base_link
 map_frame_id: map
 # queue_size: 10
 publish_tf: true
-wait_for_transform: true
-wait_for_transform_duration: 0.1
+# wait_for_transform: true
+# wait_for_transform_duration: 0.1
