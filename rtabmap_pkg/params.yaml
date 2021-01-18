@@ -1,7 +1,8 @@
-ubscribe_depth: false
-subscribe_scan: true
+subscribe_depth: false #pehele true kiya tha
+subscribe_rgbd: true
+subscribe_scan: false  #pehele true tha
 subscribe_scan_cloud: true
-subscribe_stereo: true
+subscribe_stereo: false
 frame_id: base_link
 map_frame_id: map
 # queue_size: 10
