@@ -1,8 +1,8 @@
 subscribe_depth: false
-subscribe_rgbd: true
+subscribe_rgbd: false
 subscribe_scan: false
 subscribe_scan_cloud: true
-subscribe_stereo: false
+subscribe_stereo: true
 frame_id: base_link
 map_frame_id: map
 # queue_size: 10

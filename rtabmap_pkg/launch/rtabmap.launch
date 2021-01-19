@@ -4,6 +4,11 @@
 
       <!-- Remap topics -->
       <remap from="/robot_control/odom" to="/odom" />
+      <remap from="/velodyne_points" to="/scan_cloud" />
+      <remap from="/zed/left/image_rect" to="/left/image_rect" />
+      <remap from="/zed/left/camera_info" to="/left/image_info" />
+      <remap from="/zed/right/image_rect" to="/right/image_rect" />
+      <remap from="/zed/right/camera_info" to="/right/image_info" />
 
       <!-- localization mode -->
       <param name="Mem/IncrementalMemory" type="string" value="false" />
