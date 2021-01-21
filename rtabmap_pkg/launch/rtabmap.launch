@@ -1,18 +1,18 @@
 <launch>
   <node name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="screen">
-      <rosparam command="load" file="$(find rtabmap_pkg)/params.yaml" />
+    <rosparam command="load" file="$(find rtabmap_pkg)/params.yaml" />
 
-      <!-- Remap topics -->
-      <remap from="/robot_control/odom" to="/odom" />
-      <remap from="/velodyne_points" to="/scan_cloud" />
-      <remap from="/zed/left/image_rect" to="/left/image_rect" />
-      <remap from="/zed/left/camera_info" to="/left/image_info" />
-      <remap from="/zed/right/image_rect" to="/right/image_rect" />
-      <remap from="/zed/right/camera_info" to="/right/image_info" />
+    <!-- Remap topics -->
+    <remap from="/odom" to="/robot_control/odom" />
+    <remap from="/scan_cloud" to="/velodyne_points" />
+    <remap from="/left/image_rect" to="/zed/left/image_rect" />
+    <remap from="/right/image_rect" to="/zed/right/image_rect" />
+    <remap from="/left/camera_info" to="/zed/left/camera_info" />
+    <remap from="/right/camera_info" to="/zed/right/camera_info" />
 
-      <!-- localization mode -->
-      <param name="Mem/IncrementalMemory" type="string" value="false" />
-      <param name="Mem/InitWMWithAllNodes" type="string" value="false" />
+    <!-- localization mode -->
+    <!-- <param name="Mem/IncrementalMemory" type="string" value="false" />
+    <param name="Mem/InitWMWithAllNodes" type="string" value="false" /> -->
   </node>
 
 </launch>

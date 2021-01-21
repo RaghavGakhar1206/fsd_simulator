@@ -1,6 +1,6 @@
 subscribe_depth: false
 subscribe_rgbd: false
-subscribe_scan: false
+subscribe_scan: true
 subscribe_scan_cloud: true
 subscribe_stereo: true
 frame_id: base_link
@@ -9,3 +9,4 @@ map_frame_id: map
 publish_tf: true
 # wait_for_transform: true
 # wait_for_transform_duration: 0.1
+approx_sync: true
