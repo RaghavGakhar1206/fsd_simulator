@@ -5,8 +5,8 @@
     <!-- Remap topics -->
     <remap from="/odom" to="/robot_control/odom" />
     <remap from="/scan_cloud" to="/velodyne_points" />
-    <remap from="/left/image_rect" to="/zed/left/image_rect" />
-    <remap from="/right/image_rect" to="/zed/right/image_rect" />
+    <remap from="/left/image_rect" to="/zed/left/image_raw" />
+    <remap from="/right/image_rect" to="/zed/right/image_raw" />
     <remap from="/left/camera_info" to="/zed/left/camera_info" />
     <remap from="/right/camera_info" to="/zed/right/camera_info" />
 
